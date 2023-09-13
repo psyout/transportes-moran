@@ -1,0 +1,102 @@
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.contact-form {
+	background-color: #feb508;
+	color: white;
+	margin-inline: auto;
+	display: flex;
+}
+
+.form-container {
+	flex: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form {
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	gap: 1rem;
+
+	&__title {
+		font-size: 2rem;
+		color: #2f3439;
+	}
+
+	&__input {
+		display: flex;
+		height: 2.5rem;
+		gap: 1rem;
+
+		input {
+			flex: 1;
+		}
+	}
+
+	&__button {
+		font-family: inherit;
+		font-size: 0.9rem;
+		color: #2f3439;
+		border: none;
+		display: block;
+		padding: 0.7rem;
+		transition: all 0.2s ease;
+		font-weight: 700;
+		width: 200px;
+		border: solid 3px #2f3439;
+		&:hover {
+			background-color: #2f3439;
+			color: #fff;
+		}
+	}
+
+	textarea {
+		height: 100px;
+	}
+}
+
+.info {
+	flex: 1;
+	background-color: white;
+
+	&__social {
+		background-color: #2f3439;
+		height: 85px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+
+		&--icon {
+			color: #fff;
+			font-size: 1.5rem;
+		}
+	}
+
+	&__details {
+		background-color: #fff;
+		height: 300px;
+		display: flex;
+		flex-direction: column;
+		color: #2f3439;
+		padding: 3rem;
+		gap: 1rem;
+		margin-left: 3rem;
+
+		&--title {
+			font-size: $fs-150;
+			display: inline-block;
+			margin-bottom: 1rem;
+			@include underline;
+		}
+
+		&--text {
+			color: #2f3439;
+			font-size: $fs-090;
+		}
+	}
+}

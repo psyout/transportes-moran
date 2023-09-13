@@ -1,0 +1,13 @@
+.hero-section {
+	background-size: cover;
+	background-position: center;
+	height: 80vh;
+	clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 4rem), 0 100%);
+}
+
+.hero-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
