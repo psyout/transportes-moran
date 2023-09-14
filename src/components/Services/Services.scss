@@ -1,0 +1,51 @@
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.services {
+	height: auto;
+	margin: 5rem 0;
+	padding: 0 2rem;
+
+	@include desktop {
+		height: 500px;
+	}
+
+	&__title {
+		font-size: 2rem;
+		padding: 0 2rem;
+		line-height: 1;
+		font-family: 'Rubik Mono One', sans-serif;
+		@include underline;
+	}
+}
+
+.services-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 20px;
+	margin-top: 2rem;
+	flex-wrap: wrap;
+
+	@include desktop {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&__service {
+		border: 1px solid #ccc;
+		margin-bottom: 20px;
+		padding: 10px;
+
+		@include tablet {
+			flex-basis: calc(25% - 20px);
+		}
+	}
+
+	&__icon {
+		height: 150px;
+		width: auto;
+		padding: 0 3rem;
+		margin-top: 1rem;
+	}
+}

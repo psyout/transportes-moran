@@ -2,56 +2,82 @@
 @use '../../styles/variables' as *;
 
 .about {
+	backdrop-filter: red;
 	display: flex;
-	overflow: hidden;
 	flex-direction: column;
+	height: auto;
 
-	@include tablet {
-		flex-direction: row;
-		height: 700px;
+	@include desktop-sm {
+		display: grid;
+		height: 800px;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas:
+			'imagen imagen textos textos textos textos'
+			'imagen imagen textos textos textos textos'
+			'imagen imagen establecidos establecidos trayectoria trayectoria';
 	}
 
-	&__img {
-		flex: 1;
-		background-position: center top;
-		background-size: cover;
-		height: auto;
+	&__imagen {
+		background-color: #222;
+		height: 300px;
+		grid-area: imagen;
 
-		&--figure {
-			aspect-ratio: 1/1;
-			background-size: contain;
-
-			@include tablet {
-				max-width: 100%;
-			}
+		@include desktop-sm {
+			height: auto;
 		}
 	}
 
 	&__text {
 		background-color: #f7f7f7;
-		flex: 2;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		padding: 6rem 0 0;
+		grid-area: textos;
+		height: auto;
+		padding: 5rem 2rem;
 		font-family: 'Rubik', sans-serif;
+		transition: all 0.3s ease;
+
+		@include desktop-sm {
+			padding: 3rem;
+			height: 650px;
+		}
+		@include desktop {
+			padding: 3rem;
+		}
+
+		@include desktop-xl {
+			height: 700px;
+			padding: 6rem;
+		}
 
 		&--title {
 			font-size: 2rem;
 			padding: 0 2rem;
 			line-height: 1;
 			font-family: 'Rubik Mono One', sans-serif;
+
+			@include desktop-sm {
+				margin-top: 1rem;
+			}
+
 			@include desktop {
 				padding: 0 7rem;
+				margin-top: 2rem;
+			}
+
+			@include desktop-xl {
+				margin-top: 2rem;
 			}
 			@include underline;
 		}
 
 		&--paragraph {
 			padding: 0 2rem;
-			gap: 2rem;
 			margin: 2rem 0 0;
-			font-size: $fs-110;
+			font-size: $fs-100;
+
+			@include desktop {
+				padding: 0 1rem;
+			}
 
 			@include desktop {
 				padding: 0 7rem;
@@ -66,21 +92,40 @@
 		display: flex;
 		align-items: center;
 		margin-top: 3rem;
+
 		@include desktop {
-			margin-top: 0;
+			margin-top: 5rem;
 		}
 
 		&--years {
 			flex: 1;
 			background-color: #feb508;
-			padding: 1rem 0;
+			padding: 2rem 0;
+			grid-area: establecidos;
+			text-align: center;
+
+			h3 {
+				font-size: 2rem;
+			}
 		}
 
 		&--projects {
 			flex: 1;
 			background-color: #222;
-			color: #fff;
-			padding: 1rem 0;
+			padding: 2rem 0;
+			grid-area: trayectoria;
+			text-align: center;
+			@include tablet {
+				height: 150px;
+			}
+			h3 {
+				color: #fff;
+				font-size: 2rem;
+			}
+
+			p {
+				color: #fff;
+			}
 		}
 	}
 }

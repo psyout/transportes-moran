@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero';
 import ContactForm from './components/ContactForm/ContactForm';
 import AboutUs from './components/AboutUs/AboutUs';
 import Projects from './components/Projects/Projects';
+import Services from './components/Services/Services';
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 				</header>
 			</div>
 			<Hero />
+			<Services />
 			<div className='container'>
 				<AboutUs />
 				<Projects />

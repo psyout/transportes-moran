@@ -51,6 +51,7 @@
 			grid-template-columns: repeat(4, auto);
 			line-height: 5;
 			padding: 0 1rem;
+			margin-left: -2rem;
 
 			@media (max-width: 50rem) {
 				display: none;
@@ -63,7 +64,6 @@
 				z-index: 1;
 				line-height: 3;
 				text-align: center;
-				margin-left: -1.5rem;
 				transition: height 0.3s ease;
 
 				&.active {
