@@ -38,3 +38,11 @@
 		margin-top: 0.3rem;
 	}
 }
+
+@mixin border-left {
+	&::before {
+		content: '';
+		border-left: 4px solid #feb508;
+		display: block;
+	}
+}

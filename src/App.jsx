@@ -6,6 +6,7 @@ import ContactForm from './components/ContactForm/ContactForm';
 import AboutUs from './components/AboutUs/AboutUs';
 import Projects from './components/Projects/Projects';
 import Services from './components/Services/Services';
+import Footer from './components/Footer/Footer';
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 				<AboutUs />
 				<Projects />
 				<ContactForm />
+				<Footer />
 			</div>
 		</>
 	);
