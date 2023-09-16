@@ -1,3 +1,6 @@
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
 .hero-section {
 	background-size: cover;
 	background-position: center;
@@ -8,6 +11,49 @@
 .hero-overlay {
 	background-color: rgba(0, 0, 0, 0.5);
 	height: 100%;
+	width: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	align-items: stretch;
+
+	@include desktop-sm {
+		flex-direction: row;
+	}
+
+	&__box {
+		flex: 1;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+		padding: 7%;
+		&:first-child {
+			display: none;
+		}
+
+		@include desktop-sm {
+			&:first-child {
+				display: block;
+			}
+		}
+
+		&--text {
+			h1 {
+				font-size: 2.2rem;
+				color: #fff;
+				font-family: 'Rubik Mono One', sans-serif;
+				border-left: solid 5px #feb508;
+				display: block;
+				padding-left: 0.8rem;
+			}
+			p {
+				color: #fff;
+				font-size: 1.2rem;
+				margin-top: 1rem;
+			}
+		}
+	}
 }

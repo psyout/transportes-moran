@@ -37,7 +37,7 @@ function Projects() {
 				breakpoint: 540,
 				settings: {
 					slidesToShow: 1,
-					slidesToScroll: 2,
+					slidesToScroll: 1,
 				},
 			},
 		],
@@ -54,9 +54,11 @@ function Projects() {
 								<div class='card__content'>
 									<h2 class='card__content--title'>{project.title}</h2>
 									<p class='card__content--paragraph'>{project.body}</p>
-									<a href={project.url} className='card__content--button'>
-										Ver más...
-									</a>
+									{project.url && (
+										<a href={project.url} className='card__content--button'>
+											Ver más...
+										</a>
+									)}
 								</div>
 							</article>
 						</div>

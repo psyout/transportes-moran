@@ -11,18 +11,20 @@ import preparacionImage from '../../assets/images/svg/preparacion.svg';
 
 function Services() {
 	return (
-		<section className='services'>
-			<h3 className='services__title'>Nuestros Servicios</h3>
-			<div className='services-container'>
-				{ServicesData.map((icon, index) => (
-					<article key={index} className='services-container__service'>
-						<img src={imageService(icon.title)} alt={icon.title} className='services-container__service--icon' />
-						<h2 className='services-container__service--title'>{icon.title}</h2>
-						<p className='services-container__service--body'>{icon.body}</p>
-					</article>
-				))}
-			</div>
-		</section>
+		<>
+			<section className='services'>
+				<h3 className='services__title'>Nuestros Servicios</h3>
+				<div className='services-container'>
+					{ServicesData.map((icon, index) => (
+						<article key={index} className='services-container__service'>
+							<img src={imageService(icon.title)} alt={icon.title} className='services-container__service--icon' />
+							<h2 className='services-container__service--title'>{icon.title}</h2>
+							<p className='services-container__service--body'>{icon.body}</p>
+						</article>
+					))}
+				</div>
+			</section>
+		</>
 	);
 }
 

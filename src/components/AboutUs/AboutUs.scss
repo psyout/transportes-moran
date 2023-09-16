@@ -9,7 +9,7 @@
 
 	@include desktop-sm {
 		display: grid;
-		height: 800px;
+		height: 750px;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
 		grid-template-areas:
@@ -21,25 +21,19 @@
 	&__imagen {
 		background-color: #222;
 		grid-area: imagen;
+		background-image: url(../../assets/images/about-us-img.jpg);
+		background-size: cover; /* This scales the background image to cover the entire container */
+		background-repeat: no-repeat;
+		background-position: center center;
+		height: 250px;
 
 		@include tablet {
-			// height: 400px;
+			background-size: cover;
 		}
 
 		@include desktop-sm {
+			background-size: cover;
 			height: auto;
-		}
-
-		@media screen and (max-width: 768px) {
-			.about__imagen--desktop {
-				display: none;
-			}
-		}
-
-		@media screen and (min-width: 769px) {
-			.about__imagen--mobile {
-				display: none;
-			}
 		}
 	}
 
@@ -48,7 +42,6 @@
 		grid-area: textos;
 		height: auto;
 		padding: 5rem 2rem;
-		font-family: 'Rubik', sans-serif;
 		transition: all 0.3s ease;
 
 		@include desktop-sm {
@@ -88,39 +81,35 @@
 
 		&--paragraph {
 			margin: 2rem 0 0;
-			font-size: $fs-100;
-
-			@include desktop {
-				padding: 0 1rem;
-			}
+			font-size: 1.1rem;
 
 			@include desktop {
 				padding: 0 7rem;
+				font-size: $fs-110;
+				columns: 2;
+				column-gap: 3rem;
 			}
 		}
 	}
 
 	&__info {
-		display: flex;
-		background-color: aquamarine;
-		text-align: center;
-		display: flex;
-		align-items: center;
-		margin-top: 3rem;
-
-		@include desktop {
-			margin-top: 5rem;
-		}
-
 		&--years {
 			flex: 1;
 			background-color: #feb508;
-			padding: 2rem 0;
+			padding: 1.5rem 0;
 			grid-area: establecidos;
 			text-align: center;
+			@include tablet {
+				height: 100px;
+				padding: 0.5rem 0;
+			}
 
 			h3 {
 				font-size: 2rem;
+			}
+
+			p {
+				font-size: 1rem;
 			}
 		}
 
@@ -131,7 +120,8 @@
 			grid-area: trayectoria;
 			text-align: center;
 			@include tablet {
-				height: 150px;
+				height: 100px;
+				padding: 0.5rem 0;
 			}
 			h3 {
 				color: #fff;
@@ -140,6 +130,7 @@
 
 			p {
 				color: #fff;
+				font-size: 1.1rem;
 			}
 		}
 	}
