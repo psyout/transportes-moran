@@ -5,47 +5,61 @@
 	height: auto;
 	margin: 5rem 0;
 	padding: 0 2rem;
+	background-image: url('../../assets//images/bg-services.png');
+	background-repeat: no-repeat;
 
 	@include desktop {
-		height: 500px;
+		max-width: 75rem;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 3rem 0 5rem;
 	}
 
 	&__title {
 		font-size: 2rem;
 		padding: 0 2rem;
 		line-height: 1;
+		margin-bottom: 3rem;
 		font-family: 'Rubik Mono One', sans-serif;
 		@include underline;
 	}
 }
 
 .services-container {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	row-gap: 2rem;
+	gap: 2rem;
+	text-align: left;
 	margin-top: 2rem;
-	flex-wrap: wrap;
+	font-family: 'Lato', sans-serif;
 
-	@include desktop {
-		flex-direction: row;
-		justify-content: space-between;
+	@include desktop-sm {
+		padding-bottom: 5rem;
 	}
 
 	&__service {
-		border: 1px solid #ccc;
-		margin-bottom: 20px;
-		padding: 10px;
+		border-radius: 0.5rem;
+		padding: 2rem 3rem;
+		box-shadow: 0 0 9px rgba($color: #000000, $alpha: 0.15);
 
-		@include tablet {
-			flex-basis: calc(25% - 20px);
+		&--icon {
+			width: 100px;
 		}
-	}
-
-	&__icon {
-		height: 150px;
-		width: auto;
-		padding: 0 3rem;
-		margin-top: 1rem;
+		&--title {
+			margin-top: 1rem;
+			text-align: left;
+			width: 100%;
+			font-size: $fs-130;
+			font-weight: 700;
+			font-family: 'Rubik', sans-serif;
+		}
+		&--body {
+			font-size: 1rem;
+			font-weight: 300;
+			margin-top: 0.5rem;
+		}
 	}
 }

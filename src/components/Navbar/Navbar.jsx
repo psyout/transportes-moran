@@ -33,9 +33,9 @@ function Navbar() {
 				<ul className={`navbar-menu ${mobileMenuOpen ? 'active' : ''}`}>
 					{MenuData.map((item, index) => (
 						<li key={index} className='navbar-menu__item'>
-							<Link className={item.cName} to={item.url} onClick={closeMobileMenu}>
+							<a className={item.cName} href={item.url} onClick={closeMobileMenu}>
 								{item.title}
-							</Link>
+							</a>
 						</li>
 					))}
 				</ul>

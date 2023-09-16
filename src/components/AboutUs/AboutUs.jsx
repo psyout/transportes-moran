@@ -1,10 +1,14 @@
 import './AboutUs.scss';
-import aboutImage from '../../assets/images/about-us-img.jpg';
+import aboutImageMobile from '../../assets/images/about-us-img-mobile.jpg';
+import aboutImageDesktop from '../../assets/images/about-us-img.jpg';
 
 function AboutUs() {
 	return (
 		<section class='about'>
-			<div class='about__imagen'></div>
+			<div class='about__imagen'>
+				<img className='about__imagen--mobile' src={aboutImageMobile} alt='camion moviento tierra' />
+				<img className='about__imagen--desktop' src={aboutImageDesktop} alt='camion moviento tierra' />
+			</div>
 			<div class='about__text'>
 				<h1 className='about__text--title'>Valoramos la confianza y preferencia.</h1>
 				<p className='about__text--paragraph'>
