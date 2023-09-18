@@ -17,13 +17,17 @@ function App() {
 				</header>
 			</div>
 			<Hero />
-			<Services />
-			<div className='container'>
+			<div id='nosotros'>
+				<Services />
 				<AboutUs />
-				<Projects />
-				<ContactForm />
-				<Footer />
 			</div>
+			<div id='projectos'>
+				<Projects />
+			</div>
+			<div id='contacto'>
+				<ContactForm />
+			</div>
+			<Footer />
 		</>
 	);
 }

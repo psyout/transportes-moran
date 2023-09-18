@@ -1,7 +1,7 @@
 @use '../../styles/mixins' as *;
 
 .navbar {
-	max-width: 80rem;
+	max-width: 90rem;
 	background-color: #222;
 	color: white;
 	margin-inline: auto;
@@ -14,7 +14,6 @@
 		padding: 0 2rem;
 		margin: 0 auto;
 		height: 80px;
-		max-width: 1200px;
 
 		.navbar-logo {
 			&__link {
@@ -72,6 +71,7 @@
 			}
 
 			&__item {
+				cursor: pointer;
 				&:hover {
 					background-color: rgb(224, 172, 40);
 				}
