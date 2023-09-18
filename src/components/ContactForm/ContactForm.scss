@@ -8,7 +8,7 @@
 	display: flex;
 	flex-direction: column;
 
-	@include desktop {
+	@include tablet {
 		flex-direction: row;
 	}
 }
@@ -119,15 +119,14 @@
 		display: flex;
 		flex-direction: column;
 		color: #2f3439;
-		padding: 4rem 2rem;
+		padding: 4rem 4rem;
 		gap: 1rem;
 		text-align: left;
-		order: 1;
+		order: 2;
 
 		@include desktop {
 			padding: 3rem 0 0 5rem;
 			height: 300px;
-			order: 2;
 		}
 
 		&--title {

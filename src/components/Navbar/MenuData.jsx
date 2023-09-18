@@ -1,17 +1,17 @@
 export const MenuData = [
 	{
 		title: 'Nosotros',
-		url: '/nosotros',
+		url: '#nosotros',
 		cName: 'navbar-menu__link',
 	},
 	{
 		title: 'Projectos',
-		url: '/projectos',
+		url: '#projectos',
 		cName: 'navbar-menu__link',
 	},
 	{
 		title: 'Contacto',
-		url: '/contacto',
+		url: '#contacto',
 		cName: 'navbar-menu__link',
 	},
 ];
