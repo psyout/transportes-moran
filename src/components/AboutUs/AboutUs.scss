@@ -58,10 +58,10 @@
 		}
 
 		&--title {
-			font-size: 2rem;
 			line-height: 1;
 			font-size: $fs-170;
 			font-family: 'Rubik Mono One', sans-serif;
+			text-wrap: balance;
 
 			@include desktop-sm {
 				padding: 0 2rem;
@@ -81,7 +81,11 @@
 
 		&--paragraph {
 			margin: 2rem 0 0;
-			font-size: 1.1rem;
+			font-size: 1rem;
+
+			@include tablet {
+				font-size: 0.7rem;
+			}
 
 			@include desktop {
 				padding: 0 7rem;

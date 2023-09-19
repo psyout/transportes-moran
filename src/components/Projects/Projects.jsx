@@ -44,7 +44,7 @@ function Projects() {
 	};
 	return (
 		<section className='projects'>
-			<h1 className='projects__title'>Ultimos Proyectos</h1>
+			<h1 className='projects__title'>Últimos Proyectos</h1>
 			<div className='card-container'>
 				<Slider {...settings}>
 					{ProjectsData.map((project, index) => (

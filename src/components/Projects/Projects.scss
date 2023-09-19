@@ -11,9 +11,12 @@
 
 	&__title {
 		font-family: 'Rubik Mono One', sans-serif;
-		font-size: 2rem;
+		font-size: 1.7rem;
 		line-height: 1;
 		@include underline;
+		@include desktop-sm {
+			font-size: 2rem;
+		}
 	}
 }
 

@@ -20,18 +20,18 @@ function ContactForm() {
 			</div>
 			<div className='info'>
 				<div className='info__social'>
-					<a className='info__social--icon' href='#' target='_blank'>
+					<a className='info__social--icon' rel='noreferrer' href='https://www.facebook.com/profile.php?id=100057301577456' target='_blank'>
 						<FaFacebook />
 					</a>
-					<a className='info__social--icon' href='#' target='_blank'>
+					<a className='info__social--icon' rel='noreferrer' href='https://www.facebook.com/profile.php?id=100057301577456' target='_blank'>
 						<FaTwitter />
 					</a>
-					<a className='info__social--icon' href='#' target='_blank'>
+					<a className='info__social--icon' rel='noreferrer' href='https://www.facebook.com/profile.php?id=100057301577456' target='_blank'>
 						<FaInstagram />
 					</a>
 				</div>
 				<div className='info__details'>
-					<h3 className='info__details--title'>Contactanos</h3>
+					<h3 className='info__details--title'>Información</h3>
 					<div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
 						<FaLocationDot />
 						<p className='info__details--text'>Av. Portales 69, San Bernardo, Santiago Chile</p>

@@ -32,15 +32,15 @@ export default Services;
 
 function imageService(serviceTitle) {
 	switch (serviceTitle) {
-		case 'Movimiento Aridos':
+		case 'Movimiento Áridos':
 			return aridosImage;
-		case 'Compactacion':
+		case 'Compactación':
 			return compactacionImage;
 		case 'Cama Baja':
 			return bajaImage;
-		case 'Preparacion Terreno':
+		case 'Preparación Terreno':
 			return preparacionImage;
-		case 'Venta Aridos':
+		case 'Venta Áridos':
 			return ventaImage;
 		case 'Arriendo Maquinarias':
 			return arriendoImage;
