@@ -1,12 +1,12 @@
 export const ServicesData = [
 	{
-		title: 'Movimiento Aridos',
+		title: 'Movimiento Áridos',
 		body: 'Se refiere a la extracción, transporte y manejo de materiales agregados como arena, grava, piedra triturada y otros tipos de rocas utilizados en la construcción. ',
 		url: '#',
 		imagen: require('../../assets/images/svg/movimiento.svg'),
 	},
 	{
-		title: 'Compactacion',
+		title: 'Compactación',
 		body: ' Proceso para aumentar la densidad de un material, generalmente suelo, agregado o cualquier otro material granular, al eliminar el aire y reducir los espacios vacíos entre las partículas. ',
 		url: '#',
 		imagen: require('../../assets/images/svg/compactacion.svg'),
@@ -18,13 +18,13 @@ export const ServicesData = [
 		imagen: require('../../assets/images/svg/baja.svg'),
 	},
 	{
-		title: 'Preparacion Terreno',
+		title: 'Preparación Terreno',
 		body: 'Estas actividades tienen como objetivo acondicionar el terreno para que sea adecuado y seguro para la construcción de edificios, carreteras, infraestructuras u otros tipos de proyectos.',
 		url: '#',
 		imagen: require('../../assets/images/svg/preparacion.svg'),
 	},
 	{
-		title: 'Venta Aridos',
+		title: 'Venta Áridos',
 		body: 'Venta de materiales pétreos o áridos, que son materiales naturales como arena, grava, piedra triturada y otros tipos de rocas utilizados en la construcción y la industria de la construcción civil.',
 		url: '#',
 		imagen: require('../../assets/images/svg/venta.svg'),
