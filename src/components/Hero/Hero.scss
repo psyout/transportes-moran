@@ -4,11 +4,11 @@
 .hero-section {
 	background-size: cover;
 	background-position: center;
-	height: 100vh;
+	height: 60vh;
 	clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 4rem), 0 100%);
 
 	@include desktop-sm {
-		height: 80bh;
+		height: 80vh;
 	}
 }
 
