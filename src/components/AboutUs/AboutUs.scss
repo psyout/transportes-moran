@@ -59,11 +59,12 @@
 
 		&--title {
 			line-height: 1;
-			font-size: $fs-170;
+			font-size: calc(2vw + 1rem);
 			font-family: 'Rubik Mono One', sans-serif;
 			text-wrap: balance;
 
 			@include desktop-sm {
+				font-size: 1.8rem;
 				padding: 0 2rem;
 				margin-top: 1rem;
 			}
@@ -85,9 +86,12 @@
 
 			@include desktop {
 				padding: 0 7rem;
-				font-size: $fs-110;
+				font-size: $fs-100;
 				columns: 2;
 				column-gap: 3rem;
+			}
+			@include desktop-xl {
+				font-size: $fs-110;
 			}
 		}
 	}
@@ -137,7 +141,7 @@
 }
 
 .break-desktop {
-	@include desktop-sm {
+	@include desktop {
 		display: none;
 	}
 }
