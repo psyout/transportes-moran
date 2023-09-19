@@ -20,9 +20,8 @@
 	margin: 0 auto;
 	display: flex;
 	gap: 1rem;
-	padding: 0 2rem;
 	flex-direction: column;
-	@include desktop-sm {
+	@include tablet {
 		flex-direction: row;
 		align-items: center;
 	}

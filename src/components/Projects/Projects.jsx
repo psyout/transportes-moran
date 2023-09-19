@@ -34,7 +34,7 @@ function Projects() {
 			},
 
 			{
-				breakpoint: 540,
+				breakpoint: 690,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,

@@ -18,7 +18,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 5rem 2rem;
+	padding: 5rem 0.5rem;
 }
 
 .form {
@@ -52,6 +52,8 @@
 		input {
 			flex: 1;
 			padding: 10px;
+			border-radius: none;
+			border: solid 2px #2f3439;
 		}
 		::placeholder {
 			color: #888;
@@ -62,6 +64,7 @@
 
 	&__button {
 		font-size: 0.9rem;
+		font-family: inherit;
 		color: #2f3439;
 		border: none;
 		display: block;
@@ -69,7 +72,8 @@
 		transition: all 0.2s ease;
 		font-weight: 700;
 		width: 200px;
-		border: solid 3px #2f3439;
+		border: solid 2px #2f3439;
+		cursor: pointer;
 
 		&:hover {
 			background-color: #2f3439;
@@ -79,6 +83,8 @@
 	textarea {
 		height: 100px;
 		padding: 10px;
+		resize: none;
+		border: solid 2px #2f3439;
 	}
 	::placeholder {
 		color: #888;
@@ -119,7 +125,7 @@
 		display: flex;
 		flex-direction: column;
 		color: #2f3439;
-		padding: 4rem 4rem;
+		padding: 4rem 2rem;
 		gap: 1rem;
 		text-align: left;
 		order: 2;

@@ -1,7 +1,6 @@
 import React from 'react';
 import './Services.scss';
 import { ServicesData } from './ServicesData';
-
 import aridosImage from '../../assets/images/svg/movimiento.svg';
 import compactacionImage from '../../assets/images/svg/compactacion.svg';
 import bajaImage from '../../assets/images/svg/baja.svg';

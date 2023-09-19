@@ -2,7 +2,7 @@
 @use '../../styles/variables' as *;
 
 .projects {
-	padding: 5rem 3rem;
+	padding: 5rem 2rem;
 
 	@include desktop {
 		max-width: 80rem;
@@ -11,7 +11,7 @@
 
 	&__title {
 		font-family: 'Rubik Mono One', sans-serif;
-		font-size: 1.7rem;
+		font-size: calc(2vw + 1rem);
 		line-height: 1;
 		@include underline;
 		@include desktop-sm {
@@ -37,6 +37,7 @@
 
 .card-container {
 	margin: 5rem 0;
+	padding: 0 1rem;
 }
 
 .card {
@@ -62,7 +63,7 @@
 	// background-color: rgba(0, 0, 0, 0.1);
 
 	&--title {
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 		margin-top: 12px;
 	}
 

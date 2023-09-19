@@ -3,10 +3,9 @@
 
 .services {
 	height: auto;
+	width: 100%;
 	margin: 5rem 0;
 	padding: 0 2rem;
-	background-image: url('../../assets//images/bg-services.png');
-	background-repeat: no-repeat;
 
 	@include desktop {
 		max-width: 75rem;
@@ -18,8 +17,8 @@
 	}
 
 	&__title {
-		font-size: 1.8rem;
 		line-height: 1.1;
+		font-size: calc(2vw + 1rem);
 
 		padding: 0 2rem;
 		line-height: 1;
@@ -48,7 +47,8 @@
 	&__service {
 		border-radius: 0.5rem;
 		padding: 2rem 3rem;
-		box-shadow: 0 0 9px rgba($color: #000000, $alpha: 0.15);
+		// border: solid 2px #000000;
+		box-shadow: 0 0 12px rgba($color: #000000, $alpha: 0.15);
 
 		&--icon {
 			width: 100px;
@@ -57,7 +57,7 @@
 			margin-top: 1rem;
 			text-align: left;
 			width: 100%;
-			font-size: $fs-130;
+			font-size: $fs-120;
 			font-weight: 700;
 			font-family: 'Rubik', sans-serif;
 		}
