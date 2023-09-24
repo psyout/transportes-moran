@@ -1,0 +1,101 @@
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.current-project {
+	padding: 0 3rem;
+	margin-top: 5rem;
+	@include tablet {
+		max-width: 80rem;
+		margin: 10rem auto 0;
+	}
+
+	&__title {
+		line-height: 1;
+		font-size: calc(2vw + 1rem);
+		font-family: 'Rubik Mono One', sans-serif;
+		text-wrap: balance;
+		margin-bottom: 3rem;
+		@include underline;
+		@include desktop-sm {
+			font-size: 2rem;
+		}
+	}
+
+	.slick-slide div {
+		padding: 0 !important;
+	}
+
+	.slick-prev:before,
+	.slick-next:before {
+		color: #222 !important;
+	}
+
+	.slick-dots li button::before {
+		color: #feb508 !important;
+		font-size: 1rem !important;
+		top: 2rem !important;
+	}
+}
+
+.project-container {
+	margin-top: 2rem;
+	@include desktop-sm {
+		display: flex;
+		flex-direction: row;
+		gap: 2rem;
+	}
+	&__image {
+		max-height: 350px;
+		object-fit: cover;
+		@include tablet {
+			flex: 2;
+		}
+	}
+	&__text {
+		margin-top: 1rem;
+
+		@include tablet {
+			flex: 1;
+			margin-top: 2rem;
+		}
+
+		&--title {
+			font-size: 1.1rem;
+			font-weight: 700;
+
+			@include tablet {
+				font-size: 1.2rem;
+			}
+		}
+
+		&--body {
+			font-size: 0.9rem;
+			font-weight: 300;
+			margin-top: 0.5rem;
+			@include tablet {
+				font-size: 1rem;
+			}
+		}
+	}
+	&__list {
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		span {
+			font-weight: $fw-600;
+		}
+
+		&--item {
+			list-style-type: none;
+			border-bottom: solid 1px #2f3439;
+			padding-bottom: 1rem;
+			font-size: 0.85rem;
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+}

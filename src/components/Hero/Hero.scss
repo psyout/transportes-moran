@@ -6,7 +6,7 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 80vh;
-	clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 4rem), 0 100%);
+	// clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 4rem), 0 100%);
 
 	@include desktop-sm {
 		background-position: center;

@@ -38,6 +38,15 @@
 		margin-top: 0.3rem;
 	}
 }
+@mixin white-underline {
+	&::after {
+		content: '';
+		border-bottom: 4px solid #fff;
+		width: 40px;
+		display: block;
+		margin-top: 0.3rem;
+	}
+}
 
 @mixin border-left {
 	&::before {

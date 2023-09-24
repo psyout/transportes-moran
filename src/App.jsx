@@ -7,6 +7,7 @@ import AboutUs from './components/AboutUs/AboutUs';
 import Projects from './components/Projects/Projects';
 import Services from './components/Services/Services';
 import Footer from './components/Footer/Footer';
+import CurrentProject from './components/CurrentProject/CurrentProject';
 
 function App() {
 	return (
@@ -21,7 +22,8 @@ function App() {
 				<Services />
 				<AboutUs />
 			</div>
-			<div id='projectos'>
+			<div className='container' id='projectos'>
+				<CurrentProject />
 				<Projects />
 			</div>
 			<div id='contacto'>

@@ -3,7 +3,7 @@
 
 .projects {
 	padding: 5rem 2rem;
-
+	margin-top: 5rem;
 	@include desktop {
 		max-width: 80rem;
 		margin: 4rem auto;
@@ -21,7 +21,7 @@
 }
 
 .slick-slide div {
-	padding: 0.5rem;
+	padding: 0.5rem !important;
 }
 
 .slick-prev:before,
@@ -36,8 +36,16 @@
 }
 
 .card-container {
-	margin: 5rem 0;
+	margin: 2rem 0;
 	padding: 0 1rem;
+
+	.slick-next {
+		right: -25px !important;
+	}
+
+	.slick-prev {
+		left: -25px !important;
+	}
 }
 
 .card {
@@ -48,9 +56,11 @@
 	box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.2);
 	&__imagen {
 		max-width: 100%;
-		height: 200px;
+		height: 250px;
 		object-fit: cover;
-		// padding: 1rem;
+		@include tablet {
+			height: 220px;
+		}
 	}
 }
 
@@ -60,16 +70,16 @@
 	flex-direction: column;
 	padding: 1rem;
 	align-items: flex-start;
-	// background-color: rgba(0, 0, 0, 0.1);
 
 	&--title {
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 		margin-top: 12px;
 	}
 
 	&--paragraph {
-		margin-top: 12px;
-		font-size: $fs-090;
+		margin-top: 10px;
+		font-size: $fs-080;
+		font-weight: 300;
 
 		@include tablet {
 			font-size: 1rem;

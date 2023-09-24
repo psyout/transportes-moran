@@ -38,6 +38,7 @@
 		font-family: 'Rubik Mono One', sans-serif;
 		font-size: 1.5rem;
 		color: #2f3439;
+		@include white-underline;
 
 		@include desktop-sm {
 			font-size: 2rem;
