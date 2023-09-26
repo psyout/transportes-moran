@@ -34,11 +34,11 @@ function ContactForm() {
 					<h3 className='info__details--title'>Información</h3>
 					<div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
 						<FaLocationDot />
-						<p className='info__details--text'>Av. Portales 69, San Bernardo, Santiago Chile</p>
+						<p className='info__details--text'>Av. Portales 4126, San Bernardo, Santiago</p>
 					</div>
 					<div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
 						<FaPhone />
-						<p className='info__details--text'>+569 81627909</p>
+						<p className='info__details--text'>+562 28572792</p>
 					</div>
 					<div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
 						<FaEnvelope />
