@@ -10,12 +10,12 @@ function CurrentProject() {
 			<h1 className='current-project__title'>Proyecto Destacado</h1>
 
 			<div className='project-container'>
-				<Carousel showThumbs={false} showStatus={false} showIndicators={true}>
+				<Carousel className='project-container__image' showThumbs={false} showStatus={false} showIndicators={true}>
 					<div>
-						<img className='project-container__image' src={projectImage} alt='current project' />
+						<img className='project-container__image--slide' src={projectImage} alt='current project' />
 					</div>
 					<div>
-						<img className='project-container__image' src={projectImage} alt='current project' />
+						<img className='project-container__image--slide' src={projectImage} alt='current project' />
 					</div>
 				</Carousel>
 				<div className='project-container__text'>

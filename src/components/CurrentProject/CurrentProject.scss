@@ -2,7 +2,7 @@
 @use '../../styles/variables' as *;
 
 .current-project {
-	padding: 0 3rem;
+	padding: 0 2rem;
 	margin-top: 5rem;
 	@include tablet {
 		max-width: 80rem;
@@ -39,23 +39,34 @@
 
 .project-container {
 	margin-top: 2rem;
-	@include desktop-sm {
+	@include tablet {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		gap: 2rem;
 	}
+
+	@include desktop-sm {
+		flex-direction: row;
+	}
 	&__image {
-		max-height: 350px;
-		object-fit: cover;
-		@include tablet {
-			flex: 2;
+		@include desktop-sm {
+			min-width: 65%;
+		}
+		&--slide {
+			height: 200px;
+			object-fit: cover;
+			@include tablet {
+				min-height: 300px;
+			}
+			@include desktop-sm {
+				height: 450px;
+			}
 		}
 	}
 	&__text {
 		margin-top: 1rem;
 
-		@include tablet {
-			flex: 1;
+		@include desktop {
 			margin-top: 2rem;
 		}
 
@@ -73,7 +84,7 @@
 			font-weight: 300;
 			margin-top: 0.5rem;
 			@include tablet {
-				font-size: 1rem;
+				font-size: 1.1rem;
 			}
 		}
 	}
@@ -91,7 +102,7 @@
 			list-style-type: none;
 			border-bottom: solid 1px #2f3439;
 			padding-bottom: 1rem;
-			font-size: 0.85rem;
+			font-size: 0.9rem;
 
 			&:last-child {
 				border-bottom: none;
