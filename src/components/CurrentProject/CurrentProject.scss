@@ -39,10 +39,11 @@
 
 .project-container {
 	margin-top: 2rem;
-	@include tablet {
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	@include desktop-sm {
+		align-items: flex-start;
 	}
 
 	@include desktop-sm {
@@ -64,10 +65,11 @@
 		}
 	}
 	&__text {
-		margin-top: 1rem;
-
+		// margin-top: 1rem;
+		background-color: rgba($color: #2f3439, $alpha: 0.05);
+		padding: 1rem;
 		@include desktop {
-			margin-top: 2rem;
+			// margin-top: 2rem;
 		}
 
 		&--title {
@@ -84,7 +86,7 @@
 			font-weight: 300;
 			margin-top: 0.5rem;
 			@include tablet {
-				font-size: 1.1rem;
+				font-size: 1rem;
 			}
 		}
 	}
